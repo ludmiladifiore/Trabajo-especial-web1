@@ -1,0 +1,38 @@
+.menu {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.menu img {
+    border-radius: 100%;
+    background-color: #956241;
+    width: 200px;
+}
+
+
+.menu h3 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    font-family: "Poppins", sans-serif;
+}
+
+.titulo {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fraunces", serif;
+    color: #5467bc;
+    font-size: 35px;
+    letter-spacing: 2px;
+
+}
+
+.menu :hover {
+    transform: scale(1.1);
+    transition: 0.4s ease;
+}

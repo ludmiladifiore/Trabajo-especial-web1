@@ -1,0 +1,141 @@
+.carta-marea{
+    width: 50%;
+    margin: 70px auto;
+    background-color: #ffff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.carta-marea h2{
+    text-align: center;
+    font-family: "Fraunces", serif;
+    color: #5467bc;
+    font-size: 60px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+/* TABLA */
+
+.tabla-carta{
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.tabla-carta th{
+    text-align: left;
+    padding: 0 20px 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #d8d1c7;
+    font-size: 15px;
+}
+
+.tabla-carta td{
+    padding: 22px 20px;  /* espacio entre td */
+    border-bottom: 1px solid #cebc9f;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.tabla-carta td:last-child{  /* precios */
+    color: #5467bc;
+}
+
+.tabla-carta tr:hover{
+    opacity: 0.70;
+    transition: 0.3s;
+}
+
+@media (max-width: 600px){
+
+    .carta-marea{
+        width: 95%;
+        padding: 25px;
+    }
+
+    .carta-marea h2{
+        font-size: 40px;
+    }
+
+    .tabla-carta{
+        min-width: 10px;
+    }
+
+    .tabla-carta td{
+        font-size: 10px;
+        padding: 15px 15px;
+    }
+
+    .tabla-carta th{
+        font-size: 10px;
+    }
+}
+
+/* BOTONES EDITAR/BORRAR*/
+
+.btn-borrar,
+.btn-editar {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    color: #ffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn-editar {
+    background-color: #5467bc;
+    margin-right: 5px;
+}
+
+.btn-borrar {
+    background-color: #c94b4b;
+}
+
+/* FORMULARIO */
+
+#formCafe {
+    width: 420px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #f8f4ef;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#formCafe label {
+    font-weight: bold;
+}
+
+#formCafe input {
+    padding: 10px;
+    border: 2px solid #c7b299;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: .3s;
+}
+
+/* BOTON GUARDAR */
+
+#formCafe button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5467bc;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+

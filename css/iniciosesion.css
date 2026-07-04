@@ -1,0 +1,80 @@
+.inicio_form {
+    background: #cebc9f;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 70px auto;
+
+    text-align: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+.inicio_form h2 {
+    margin-bottom: 20px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.inicio_form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff9eb;
+    border-radius: 5px;
+
+    outline: none;
+}
+
+.inicio_form button {
+    width: 200px;
+    height: 35px;
+
+    background: #5467bc;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    transition: 0.3s;
+}
+
+.inicio_form button:hover {
+    background: #5467bc;
+}
+
+.inicio_form a {
+    color: #5467bc;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+#parrafo {
+    background: #aea89f;
+    color: #5467bc;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    user-select: none;
+}
+
+#mensaje {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}

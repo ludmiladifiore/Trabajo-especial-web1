@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff9eb;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* =========================
+    NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    background-color: #cebc9f;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.imgLogo {
+    width: 90px;
+    height: auto;
+}
+
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 38px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.nav-links {
+    list-style: none;
+
+    position: fixed;
+    top: 75px;
+    left: -100%;
+
+    width: 100%;
+    height: calc(100vh - 75px);
+
+    background-color: #cebc9f;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+
+    transition: left .4s ease;
+
+    z-index: 999;
+}
+
+.nav-links.active {
+    left: 0;
+}
+
+.nav-links li {
+    transition: .3s;
+}
+
+.nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.navImg {
+    width: 45px;
+    display: block;
+}
+
+/* =========================
+    SECCION PRINCIPAL
+========================= */
+
+.medio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.izquierda,
+.centro,
+.derecha {
+    width: 100%;
+    min-height: 280px;
+}
+
+/* IZQUIERDA */
+
+.izquierda {
+    background-color: #5467bc;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.izquierda h2 {
+    font-size: 35px;
+    font-family: "Fraunces", serif;
+    margin-bottom: 25px;
+}
+
+.lista {
+    list-style: none;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+/* CENTRO */
+
+.centro {
+    background-color: #ffffff;
+    color: #5467bc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-family: "Fraunces", serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* DERECHA */
+
+.derecha {
+    background-color: #cebc9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.frios {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.frios:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+    CARRUSEL
+========================= */
+
+.carrusel-marea {
+    width: 95%;
+    margin: 20px auto;
+
+    position: relative;
+
+    border-radius: 15px;
+}
+
+.info {
+    width: 100%;
+}
+
+.texto {
+    background-color: #cebc9f;
+    min-height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    text-align: center;
+}
+
+.texto h2 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 8px;
+
+    margin-bottom: 10px;
+}
+
+.texto p {
+    color: white;
+    font-size: 18px;
+}
+
+/* BOTONES */
+
+button {
+
+
+    top: 35%;
+
+    background-color: #5467bc;
+    color: #ffffff;
+
+    border: none;
+    padding: 10px 15px;
+
+    border-radius: 10px;
+    cursor: pointer;
+
+    z-index: 10;
+
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.btnIzquierda {
+    left: 15px;
+}
+
+.btnDerecha {
+    right: 15px;
+}
+
+.btnIzquierda,
+.btnDerecha {
+    position: absolute;
+    top: 35%;
+
+    background-color: #5467bc;
+    color: #ffffff;
+
+    border: none;
+    padding: 10px 15px;
+
+    border-radius: 10px;
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+/* =========================
+    SUCURSALES
+========================= */
+
+.promocion {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.direcciones {
+    width: 100%;
+    text-align: center;
+    color: #5467bc;
+}
+
+.direcciones h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.calles {
+    list-style: none;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.ubic {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.imgsucursal {
+    width: 600px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* =========================
+    FOOTER
+========================= */
+
+.footer {
+    background-color: #ffffff;
+    margin-top: 50px;
+    padding: 40px 20px;
+}
+
+.footer-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-seccion h2,
+.footer-seccion h3 {
+    color: #5467bc;
+    margin-bottom: 10px;
+}
+
+.footer-seccion p {
+    line-height: 30px;
+}
+
+.footer-boton {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* =========================
+    TABLET Y ESCRITORIO
+========================= */
+
+@media (min-width: 768px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        height: 85px;
+    }
+
+    .imgLogo {
+        width: 120px;
+    }
+
+    .navImg {
+        width: 55px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-links {
+        position: static;
+        left: 0;
+
+        width: auto;
+        height: auto;
+
+        background: transparent;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    /* SECCIÓN PRINCIPAL */
+
+    .izquierda,
+    .centro,
+    .derecha {
+        width: 400px;
+        min-height: 400px;
+    }
+
+    .izquierda {
+        padding: 30px;
+    }
+
+    .izquierda h2 {
+        font-size: 35px;
+        text-align: left;
+    }
+
+    .lista {
+        font-size: 25px;
+        line-height: 60px;
+        text-align: left;
+    }
+
+    .centro {
+        font-size: 70px;
+    }
+
+    /* CARRUSEL */
+
+    .texto h2 {
+        font-size: 50px;
+        letter-spacing: 8px;
+    }
+
+    .texto p {
+        font-size: 18px;
+    }
+
+    /* SUCURSALES */
+
+    .direcciones {
+        width: 500px;
+        text-align: left;
+    }
+
+    .direcciones h2 {
+        font-size: 40px;
+    }
+
+    .calles {
+        font-size: 25px;
+        line-height: 60px;
+    }
+
+    .imgsucursal {
+        width: 600px;
+        max-width: 100%;
+    }
+
+    /* FOOTER */
+
+    .footer-contenedor {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        text-align: left;
+    }
+}

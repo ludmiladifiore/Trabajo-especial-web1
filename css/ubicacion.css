@@ -1,0 +1,14 @@
+
+.maps-contenedor{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.img-maps{
+    width: 500px;
+}
+
+
